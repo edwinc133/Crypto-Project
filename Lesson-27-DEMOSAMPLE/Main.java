@@ -8,21 +8,23 @@ class Main {
   void init(){
 
     // This example we are substituting all lower case 
-    // letters to another lower case letter.
-    char[] sub = new char[5]; 
-    sub[0] = 'a'; 
+    // letters to another lower case letter. 
+    char[] sub = new char[5];
+    sub[0] = 'a';
     sub[1] = 'e';
     sub[2] = 'i';
     sub[3] = 'o';
     sub[4] = 'u';
 
 
+
+  
     char[] sub2 = new char[5];
-    sub2[0] = '\u2662';  // WHITE DIAMOND SUIT
-    sub2[1] = '\u280F';  // BRAILLE PATTERN DOTS-1234	
-    sub2[2] = '\u25D0';  // CIRCLE WITH LEFT HALF BLACK
-    sub2[3] = '\u2663';  // BLACK CLUB SUIT
-    sub2[4] = '\u2803';  // BRAILLE PATTERN DOTS-12 
+  sub2[0] = '\u2662';
+  sub2[1] = '\u280F';
+  sub2[2] = '\u25D0';
+  sub2[3] = '\u2663';
+  sub2[4] = '\u2803';
 
     
     // Encoding message
