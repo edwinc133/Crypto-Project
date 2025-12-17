@@ -120,7 +120,7 @@ class Main {
         bld+=ch;
       }
     }
-    return bld;
+    return bld; 
   }
   int indexOf(char ch, char[] arry){
     for(int x=0; x<=arry.length-1; x++){
