@@ -9,22 +9,27 @@ class Main {
 
     // This example we are substituting all lower case 
     // letters to another lower case letter. 
-    char[] sub = new char[5];
+    char[] sub = new char[8];
     sub[0] = 'a';
     sub[1] = 'e';
     sub[2] = 'i';
     sub[3] = 'o';
     sub[4] = 'u';
+    sub[5] = 'l';
+    sub[7] = 'r'; 
 
 
 
   
-    char[] sub2 = new char[5];
+    char[] sub2 = new char[8];
   sub2[0] = '\u2662';
   sub2[1] = '\u280F';
   sub2[2] = '\u25D0';
   sub2[3] = '\u2663';
   sub2[4] = '\u2803';
+  sub2[5] = '\u25BD';
+  sub2[6] = '\u2660';
+  sub2[7] = '\u281B';
 
     
     // Encoding message
@@ -44,7 +49,7 @@ class Main {
 
     
     // decoding message
-    String file2 = Input.readFile("Encode1.txt");
+    String file2 = Input.readFile("Encode3.txt");
     
     String decodedMsg1 = Swap(file2);
     Input.writeFile("Decode1.txt", decodedMsg1);
@@ -57,7 +62,7 @@ class Main {
     
     
   }
-  // Level 1 swap string
+  // Level 3 swap string
   String Swap(String txt){
     String bld="";
     for(int x = 0; x <= txt.length()-1; x+=3){
@@ -105,7 +110,7 @@ class Main {
     return bld;
   }
 
-  // Level 3 Substituion encoding
+  // Level 1 Substituion encoding
   String Substituion(String s, char[] sub, char[] sub2){
     String bld="";
     char ch ='\0';
@@ -114,7 +119,7 @@ class Main {
       ch=s.charAt(x);
       index=indexOf(ch,sub);
       if(index!=-1){
-        bld+=sub2[index];
+        bld+=sub2[index]; 
       }
       else{
         bld+=ch;
